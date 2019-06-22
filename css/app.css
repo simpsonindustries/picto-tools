@@ -1,0 +1,8 @@
+h2 {
+    margin-top: 8px;
+}
+
+.modal-footer {
+    display:grid;
+    justify-content:normal;
+}
