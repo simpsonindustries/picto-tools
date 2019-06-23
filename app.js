@@ -12,7 +12,7 @@ if ("serviceWorker" in navigator) {
   })
 }
 
-    $(".icon").on("click tap", function(){
+    $(".icon").on("vclick", function(){
         $(".modal-footer").html($("div", this).text());
         $(".modal-body").html($("img", this).clone().removeClass("icon__svg").addClass("img-fluid"));
         $('#modal').modal('toggle');
