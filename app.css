@@ -10,6 +10,11 @@ html body {
     flex-wrap: wrap;
   }
 
+  .fixed-top {
+    max-height: 100vh;
+    overflow: auto;
+  }
+
   .icon {
     width: 60px;
     margin: 8px;
@@ -20,10 +25,6 @@ html body {
     width: 60px;
     height: 60px;
   }
-  .modal-body .icon__svg {
-    width: 60px;
-    height: 60px;
-    }
 
   .icon__title {
     font-size: 12px;
@@ -50,27 +51,27 @@ html body {
   .nav-item {
     margin-left: 8px
   }
-  .flex-area {
+  /* .flex-area {
     position: fixed;
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: row;
-  }
+  } */
 
+
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
   .sidebar {
     overflow:auto;
   }
 
-@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
-/* .symbols-content {
-width: 80%;
-} */
-
-.navbar-toggleable-md .navbar-collapse {
+  .navbar-toggleable-md .navbar-collapse {
     display: flex!important;
     width: 100%;
 }
+}
+
+
 
 /* .sidebar {
 flex-basis: initial !important;

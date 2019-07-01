@@ -9,12 +9,12 @@ if ("serviceWorker" in navigator) {
         // registration failed :( 
         console.log("ServiceWorker registration failed: ", err); 
       }); 
-  })
+  });
 }
 
-    $(".icon").on("vclick", function(){
-        $(".modal-footer").html($("div", this).text());
-        $(".modal-body").html($("img", this).clone().removeClass("icon__svg").addClass("img-fluid"));
-        $('#modal').modal('toggle');
-    })
+    // $(".icon").on("vclick", function(){
+    //     $(".modal-footer").html($("div", this).text());
+    //     $(".modal-body").html($("img", this).clone().removeClass("icon__svg").addClass("img-fluid"));
+    //     $('#modal').modal('toggle');
+    // });
 });
