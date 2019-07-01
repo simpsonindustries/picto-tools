@@ -12,9 +12,8 @@ if ("serviceWorker" in navigator) {
   });
 }
 
-    $(".icon").on("mouseup", function(){
-        $(".modal-footer").html($("div", this).text());
-        $(".modal-body").html($("img", this).clone().removeClass("icon__svg").addClass("img-fluid"));
-        $('#modal').modal('toggle');
+    $("#modal").on("shown.bs.modal", function(event){
+        $(".modal-footer").html($(".icon__title", event.relatedTarget).text());
+        $(".modal-body").html($("img", event.relatedTarget).clone().removeClass("icon__svg").addClass("img-fluid"));
     });
 });
