@@ -51,54 +51,18 @@ html body {
   .nav-item {
     margin-left: 8px
   }
-  /* .flex-area {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-  } */
-
+h2 {
+  margin-top:8px;
+}
 
 @media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
-  .sidebar {
-    overflow:auto;
+  html body {
+    padding-top: 9rem;
   }
-
-  .navbar-toggleable-md .navbar-collapse {
-    display: flex!important;
-    width: 100%;
-}
-}
-
-
-
-/* .sidebar {
-flex-basis: initial !important;
-display: initial !important;
-width:20%;
-} */
 }
 
   @media (max-width: 960px) {
-    /* .flex-area {
-      flex-direction: column;
-    } */
-
-    /* .sidebar {
-        width: 100%;
-    } */
-
-    .symbols-content {
-      width: 100%;
+   html body {
+      padding-top: 56px;
     }
   }
-
-h2 {
-    margin-top: 8px;
-}
-
-.modal-footer {
-    display:grid;
-    justify-content:normal;
-}
