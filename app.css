@@ -55,6 +55,11 @@ h2 {
   margin-top:8px;
 }
 
+.modal-footer {
+  display:grid;
+  justify-content:normal;
+}
+
 @media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
   html body {
     padding-top: 9rem;
