@@ -1,17 +1,13 @@
+if ("serviceWorker" in navigator) { 
+  window.addEventListener("load", function() {   
+    navigator.serviceWorker.register("/sw.js").then(
+      function(registration) { 
+        console.log("ServiceWorker registration successful with scope: ", registration.scope);
+      }); 
+  });
+}
+
 $(document).ready(function() {
-  if ("serviceWorker" in navigator) { 
-    window.addEventListener("load", function() {   
-      navigator.serviceWorker.register("/sw.js").then(
-        function(registration) { 
-          // Registration was successful
-          console.log("ServiceWorker registration successful with scope: ", registration.scope); }, 
-        function(err) { 
-          // registration failed :( 
-          console.log("ServiceWorker registration failed: ", err); 
-        }); 
-    });
-  }
-  
   var $icons = $(".icon");
   $.each($icons, function() {
     $("img", $(this)).attr("src", "symbols/" + $("div", $(this)).text().replace(/ /g, "_") + ".svg");
