@@ -2,6 +2,7 @@
  "name": "Picto Tools",
  "short_name": "Picto Tools",
  "description": "A suite of tools designed for those that use pictograms as a means of comunication.",
+ "display": "fullscreen",
  "icons": [
     {
      "src": "/icons/android-icon-36x36.png",
@@ -42,7 +43,6 @@
    ],
  "lang": "en-GB",
  "start_url": "/index.html",
- "display": "standalone",
  "theme_color": "#212529",
  "background_color": "#FFF"
 }
